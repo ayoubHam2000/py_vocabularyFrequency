@@ -1,4 +1,4 @@
-env/
-__pycache__/
-texts/
-out/
+env/*
+__pycache__/*
+texts/*
+out/*
