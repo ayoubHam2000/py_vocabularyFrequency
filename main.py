@@ -1,13 +1,17 @@
 import glob
 from functions import *
 
-files = glob.glob("texts/*")
+files = glob.glob("texts/book/*")
 outPut = open("out.txt", "w")
 
 
-result = getWordsFrequencies(files)
-for item in result.keys() :
-    o = f'{item} : {result[item]}'
-    outPut.write(o + "\n")
+wordFreq = getWordsFrequencies(files)
+print(len(wordFreq))
 
-print(len(result))
+res = getOrigins(wordFreq)
+for item in res.keys():
+    o = f'{item} => {res[item]}'
+    #print(o)
+    outPut.write(f'{o}\n')
+
+print(len(res))

@@ -1,3 +1,4 @@
+word : frequency
 gossiped : 1
 owl-free : 1
 bird-watcher : 1
